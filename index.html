@@ -129,7 +129,7 @@
 
 
 <!--  BEGIN MAIN CONTAINER  -->
-<div class="main-container sidebar-closed" id="container">
+<div class="main-container" id="container">
 
 <div class="overlay"></div>
 <div class="search-overlay"></div>
@@ -159,7 +159,7 @@
                 <a href="/" class="nav-link">휴(HEW)</a>
             </div>
         </div>
-        <ul class="list-unstyled menu-categories ps" id="accordionExample">
+        <ul class="list-unstyled menu-categories ps ps--active-y" id="accordionExample">
             <li class="menu menu-heading">
                 <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus"><line x1="5" y1="12" x2="19" y2="12"></line></svg><span>DASHBOARD</span></div>
             </li>
@@ -206,10 +206,10 @@
                 </a>
                 <ul class="collapse submenu list-unstyled" id="sales" data-bs-parent="#accordionExample">
                     <li>
-                        <a href="/sales"> 일자별 매출 </a>
+                        <a href="/days.html"> 일자별 매출 </a>
                     </li>
                     <li>
-                        <a href="/sales/product"> 상품별 매출 </a>
+                        <a href="/product.html"> 상품별 매출 </a>
                     </li>
                 </ul>
             </li>
@@ -287,7 +287,7 @@
             <br>
             <br>
             <br>
-        <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; height: 625px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 87px; height: 300px;"></div></div></ul>
+        <div class="ps__rail-x" style="left: 0px; bottom: -49px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 49px; height: 634px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 95px; height: 300px;"></div></div></ul>
     </nav>
 </div>
 <!--  END SIDEBAR  -->
@@ -316,16 +316,16 @@
                             </div>
                             <div class="w-content">
                                 <div class="w-info">
-                                    <p id="salesDay" class="value" style="color: #e2a03f;">108,400원</p>
+                                    <p id="salesDay" class="value" style="color: #e2a03f;">52,400원</p>
                                 </div>
                             </div>
                             <div class="w-progress-stats">                                            
                                 <div class="progress">
-                                    <div id="salesDayProgressBar" class="progress-bar bg-warning" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div id="salesDayProgressBar" class="progress-bar bg-warning" role="progressbar" style="width: 38%" aria-valuenow="38" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                                 <div class="">
                                     <div class="w-icon">
-                                        <p id="salesDayProgressBarText" style="color: #e2a03f;">85%</p>
+                                        <p id="salesDayProgressBarText" style="color: #e2a03f;">54%</p>
                                     </div>
                                 </div>
                             </div>
@@ -343,16 +343,16 @@
                             </div>
                             <div class="w-content">
                                 <div class="w-info">
-                                    <p id="salesMonth" class="value" style="color: #00ab55;">3,129,300원</p>
+                                    <p id="salesMonth" class="value" style="color: #00ab55;">178,000원</p>
                                 </div>
                             </div>
                             <div class="w-progress-stats">                                            
                                 <div class="progress">
-                                    <div id="salesMonthProgressBar" class="progress-bar bg-success" role="progressbar" style="width: 77%" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div id="salesMonthProgressBar" class="progress-bar bg-success" role="progressbar" style="width: 6%" aria-valuenow="6" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                                 <div class="">
                                     <div class="w-icon">
-                                        <p id="salesMonthProgressBarText" style="color: #00ab55;">77%</p>
+                                        <p id="salesMonthProgressBarText" style="color: #00ab55;">6%</p>
                                     </div>
                                 </div>
                                 
@@ -371,16 +371,16 @@
                             </div>
                             <div class="w-content">
                                 <div class="w-info">
-                                    <p id="salesYear" class="value" style="color: #008eff;">3,129,300원</p>
+                                    <p id="salesYear" class="value" style="color: #008eff;">3,562,200원</p>
                                 </div>
                             </div>
                             <div class="w-progress-stats">                                            
                                 <div class="progress">
-                                    <div id="salesYearProgressBar" class="progress-bar bg-info" role="progressbar" style="width: 81%" aria-valuenow="81" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div id="salesYearProgressBar" class="progress-bar bg-info" role="progressbar" style="width: 83%" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                                 <div class="">
                                     <div class="w-icon">
-                                        <p id="salesYearProgressBarText" style="color: #008eff;">81%</p>
+                                        <p id="salesYearProgressBarText" style="color: #008eff;">83%</p>
                                     </div>
                                 </div>
                                 
@@ -403,30 +403,30 @@
                                 <table class="table">
                                     <thead>
                                         <tr>
-                                            <th id="day_sales_1_day" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(0);"><h6>10/31(화)</h6></button></th>
-                                            <th id="day_sales_2_day" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(1);"><h6>10/30(월)</h6></button></th>
-                                            <th id="day_sales_3_day" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(2);"><h6>10/29(일)</h6></button></th>
-                                            <th id="day_sales_4_day" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(3);"><h6>10/28(토)</h6></button></th>
-                                            <th id="day_sales_5_day" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(4);"><h6>10/27(금)</h6></button></th>
-                                            <th id="day_sales_6_day" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(5);"><h6>10/26(목)</h6></button></th>
-                                            <th id="day_sales_7_day" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(6);"><h6>10/25(수)</h6></button></th>
-                                            <th id="day_sales_8_day" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(7);"><h6>10/24(화)</h6></button></th>
-                                            <th id="day_sales_9_day" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(8);"><h6>10/23(월)</h6></button></th>
-                                            <th id="day_sales_10_day" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(9);"><h6>10/22(일)</h6></button></th>
+                                            <th id="day_sales_1_day" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(0);"><h6>11/02(목)</h6></button></th>
+                                            <th id="day_sales_2_day" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(1);"><h6>11/01(수)</h6></button></th>
+                                            <th id="day_sales_3_day" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(2);"><h6>10/31(화)</h6></button></th>
+                                            <th id="day_sales_4_day" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(3);"><h6>10/30(월)</h6></button></th>
+                                            <th id="day_sales_5_day" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(4);"><h6>10/29(일)</h6></button></th>
+                                            <th id="day_sales_6_day" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(5);"><h6>10/28(토)</h6></button></th>
+                                            <th id="day_sales_7_day" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(6);"><h6>10/27(금)</h6></button></th>
+                                            <th id="day_sales_8_day" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(7);"><h6>10/26(목)</h6></button></th>
+                                            <th id="day_sales_9_day" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(8);"><h6>10/25(수)</h6></button></th>
+                                            <th id="day_sales_10_day" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(9);"><h6>10/24(화)</h6></button></th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td id="day_sales_1_money" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(0);"><h6>108,400</h6></button></td>
-                                            <td id="day_sales_2_money" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(1);"><h6>125,900</h6></button></td>
-                                            <td id="day_sales_3_money" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(2);"><h6>115,000</h6></button></td>
-                                            <td id="day_sales_4_money" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(3);"><h6>119,700</h6></button></td>
-                                            <td id="day_sales_5_money" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(4);"><h6>120,600</h6></button></td>
-                                            <td id="day_sales_6_money" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(5);"><h6>112,200</h6></button></td>
-                                            <td id="day_sales_7_money" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(6);"><h6>114,400</h6></button></td>
-                                            <td id="day_sales_8_money" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(7);"><h6>109,400</h6></button></td>
-                                            <td id="day_sales_9_money" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(8);"><h6>118,700</h6></button></td>
-                                            <td id="day_sales_10_money" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(9);"><h6>122,800</h6></button></td>
+                                            <td id="day_sales_1_money" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(0);"><h6>52,400</h6></button></td>
+                                            <td id="day_sales_2_money" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(1);"><h6>125,600</h6></button></td>
+                                            <td id="day_sales_3_money" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(2);"><h6>100,900</h6></button></td>
+                                            <td id="day_sales_4_money" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(3);"><h6>121,900</h6></button></td>
+                                            <td id="day_sales_5_money" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(4);"><h6>114,600</h6></button></td>
+                                            <td id="day_sales_6_money" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(5);"><h6>100,000</h6></button></td>
+                                            <td id="day_sales_7_money" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(6);"><h6>142,800</h6></button></td>
+                                            <td id="day_sales_8_money" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(7);"><h6>100,100</h6></button></td>
+                                            <td id="day_sales_9_money" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(8);"><h6>124,800</h6></button></td>
+                                            <td id="day_sales_10_money" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(9);"><h6>115,800</h6></button></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -449,22 +449,22 @@
                                 <table class="table">
                                     <thead>
                                         <tr>
-                                            <th id="week_sales_1_name" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(7);"><h6>일</h6></button></th>
-                                            <th id="week_sales_2_name" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(8);"><h6>월</h6></button></th>
-                                            <th id="week_sales_3_name" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(9);"><h6>화</h6></button></th>
-                                            <th id="week_sales_4_name" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return;"><h6>수</h6></button></th>
-                                            <th id="week_sales_5_name" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return;"><h6>목</h6></button></th>
+                                            <th id="week_sales_1_name" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(5);"><h6>일</h6></button></th>
+                                            <th id="week_sales_2_name" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(6);"><h6>월</h6></button></th>
+                                            <th id="week_sales_3_name" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(7);"><h6>화</h6></button></th>
+                                            <th id="week_sales_4_name" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(8);"><h6>수</h6></button></th>
+                                            <th id="week_sales_5_name" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(9);"><h6>목</h6></button></th>
                                             <th id="week_sales_6_name" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return;"><h6>금</h6></button></th>
                                             <th id="week_sales_7_name" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return;"><h6>토</h6></button></th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td id="week_sales_1_money" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(7);"><h6>108,400</h6></button></td>
-                                            <td id="week_sales_2_money" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(8);"><h6>125,900</h6></button></td>
-                                            <td id="week_sales_3_money" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(9);"><h6>115,000</h6></button></td>
-                                            <td id="week_sales_4_money" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return;"><h6>0</h6></button></td>
-                                            <td id="week_sales_5_money" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return;"><h6>0</h6></button></td>
+                                            <td id="week_sales_1_money" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(5);"><h6>114,600</h6></button></td>
+                                            <td id="week_sales_2_money" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(6);"><h6>121,900</h6></button></td>
+                                            <td id="week_sales_3_money" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(7);"><h6>100,900</h6></button></td>
+                                            <td id="week_sales_4_money" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(8);"><h6>125,600</h6></button></td>
+                                            <td id="week_sales_5_money" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveSales(9);"><h6>52,400</h6></button></td>
                                             <td id="week_sales_6_money" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return;"><h6>0</h6></button></td>
                                             <td id="week_sales_7_money" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return;"><h6>0</h6></button></td>
                                         </tr>
@@ -489,24 +489,24 @@
                                 <table class="table">
                                     <thead>
                                         <tr>
-                                            <th id="month_sales_1_month" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveMonthSale(0);"><h6>10월</h6></button></th>
-                                            <th id="month_sales_2_month" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveMonthSale(1);"><h6>09월</h6></button></th>
-                                            <th id="month_sales_3_month" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveMonthSale(2);"><h6>08월</h6></button></th>
-                                            <th id="month_sales_4_month" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveMonthSale(3);"><h6>07월</h6></button></th>
-                                            <th id="month_sales_5_month" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveMonthSale(4);"><h6>06월</h6></button></th>
-                                            <th id="month_sales_6_month" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveMonthSale(5);"><h6>05월</h6></button></th>
-                                            <th id="month_sales_7_month" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveMonthSale(6);"><h6>04월</h6></button></th>
-                                            <th id="month_sales_8_month" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveMonthSale(7);"><h6>03월</h6></button></th>
-                                            <th id="month_sales_9_month" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveMonthSale(8);"><h6>02월</h6></button></th>
-                                            <th id="month_sales_10_month" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveMonthSale(9);"><h6>01월</h6></button></th>
-                                            <th id="month_sales_11_month" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveMonthSale(10);"><h6>12월</h6></button></th>
-                                            <th id="month_sales_12_month" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveMonthSale(11);"><h6>11월</h6></button></th>
+                                            <th id="month_sales_1_month" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveMonthSale(0);"><h6>11월</h6></button></th>
+                                            <th id="month_sales_2_month" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveMonthSale(1);"><h6>10월</h6></button></th>
+                                            <th id="month_sales_3_month" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveMonthSale(2);"><h6>09월</h6></button></th>
+                                            <th id="month_sales_4_month" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveMonthSale(3);"><h6>08월</h6></button></th>
+                                            <th id="month_sales_5_month" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveMonthSale(4);"><h6>07월</h6></button></th>
+                                            <th id="month_sales_6_month" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveMonthSale(5);"><h6>06월</h6></button></th>
+                                            <th id="month_sales_7_month" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveMonthSale(6);"><h6>05월</h6></button></th>
+                                            <th id="month_sales_8_month" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveMonthSale(7);"><h6>04월</h6></button></th>
+                                            <th id="month_sales_9_month" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveMonthSale(8);"><h6>03월</h6></button></th>
+                                            <th id="month_sales_10_month" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveMonthSale(9);"><h6>02월</h6></button></th>
+                                            <th id="month_sales_11_month" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveMonthSale(10);"><h6>01월</h6></button></th>
+                                            <th id="month_sales_12_month" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveMonthSale(11);"><h6>12월</h6></button></th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td id="month_sales_1_money" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveMonthSale(0);"><h6>3,129,300</h6></button></td>
-                                            <td id="month_sales_2_money" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveMonthSale(1);"><h6>0</h6></button></td>
+                                            <td id="month_sales_1_money" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveMonthSale(0);"><h6>178,000</h6></button></td>
+                                            <td id="month_sales_2_money" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveMonthSale(1);"><h6>3,384,200</h6></button></td>
                                             <td id="month_sales_3_money" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveMonthSale(2);"><h6>0</h6></button></td>
                                             <td id="month_sales_4_money" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveMonthSale(3);"><h6>0</h6></button></td>
                                             <td id="month_sales_5_money" class="text-center"><button style="background-color: transparent; border: 0px solid #3498db;" onclick="return OnMoveMonthSale(4);"><h6>0</h6></button></td>
@@ -538,10 +538,10 @@
                             <div class="table-responsive">
                                 <div id="board_table_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4 no-footer"></div><table class="table table-hover table-striped table-bordered dataTable no-footer" id="board_table" style="width: 1135px;">
                                     <thead>
-                                        <tr role="row"><th class="text-center col-1 sorting_desc" data-orderable="false" rowspan="1" colspan="1" aria-label="#" style="width: 43px;">#</th><th class="text-center col-7 sorting_disabled" data-orderable="false" rowspan="1" colspan="1" aria-label="제목" style="width: 610px;">제목</th><th class="text-center col-2 sorting_disabled" data-orderable="false" rowspan="1" colspan="1" aria-label="글쓴이" style="width: 146px;">글쓴이</th><th class="text-center col-2 sorting_disabled" data-orderable="false" rowspan="1" colspan="1" aria-label="날짜" style="width: 159px;">날짜</th></tr>
+                                        <tr role="row"><th class="text-center col-1 sorting_desc" data-orderable="false" rowspan="1" colspan="1" aria-label="#" style="width: 43px;">#</th><th class="text-center col-7 sorting_disabled" data-orderable="false" rowspan="1" colspan="1" aria-label="제목" style="width: 611px;">제목</th><th class="text-center col-2 sorting_disabled" data-orderable="false" rowspan="1" colspan="1" aria-label="글쓴이" style="width: 145px;">글쓴이</th><th class="text-center col-2 sorting_disabled" data-orderable="false" rowspan="1" colspan="1" aria-label="날짜" style="width: 159px;">날짜</th></tr>
                                     </thead>
                                     <tbody>
-                                    <tr role="row"><td class="sorting_1"><div class="text-center">143</div></td><td><div class="text-center">23102401 패치내역</div></td><td><div class="text-center">마스터</div></td><td><div class="text-center">2023-10-24 11:24:07</div></td></tr><tr role="row"><td class="sorting_1"><div class="text-center">142</div></td><td><div class="text-center">23100701 패치내역</div></td><td><div class="text-center">마스터</div></td><td><div class="text-center">2023-10-17 14:14:42</div></td></tr><tr role="row"><td class="sorting_1"><div class="text-center">141</div></td><td><div class="text-center">마일리지 적립/사용 내역 기능 업데이트</div></td><td><div class="text-center">마스터</div></td><td><div class="text-center">2023-10-10 14:53:46</div></td></tr><tr role="row"><td class="sorting_1"><div class="text-center">139</div></td><td><div class="text-center">23100501 패치내역</div></td><td><div class="text-center">마스터</div></td><td><div class="text-center">2023-10-05 14:25:35</div></td></tr><tr role="row"><td class="sorting_1"><div class="text-center">138</div></td><td><div class="text-center">애드인 기능(유료) 오픈 안내</div></td><td><div class="text-center">유로커피머신</div></td><td><div class="text-center">2023-09-29 08:08:35</div></td></tr></tbody>
+                                    <tr role="row"><td class="sorting_1"><div class="text-center">144</div></td><td><div class="text-center">23102501 패치내역</div></td><td><div class="text-center">마스터</div></td><td><div class="text-center">2023-10-25 16:32:30</div></td></tr><tr role="row"><td class="sorting_1"><div class="text-center">143</div></td><td><div class="text-center">23102401 패치내역</div></td><td><div class="text-center">마스터</div></td><td><div class="text-center">2023-10-24 11:24:07</div></td></tr><tr role="row"><td class="sorting_1"><div class="text-center">142</div></td><td><div class="text-center">23100701 패치내역</div></td><td><div class="text-center">마스터</div></td><td><div class="text-center">2023-10-17 14:14:42</div></td></tr><tr role="row"><td class="sorting_1"><div class="text-center">141</div></td><td><div class="text-center">마일리지 적립/사용 내역 기능 업데이트</div></td><td><div class="text-center">마스터</div></td><td><div class="text-center">2023-10-10 14:53:46</div></td></tr><tr role="row"><td class="sorting_1"><div class="text-center">139</div></td><td><div class="text-center">23100501 패치내역</div></td><td><div class="text-center">마스터</div></td><td><div class="text-center">2023-10-05 14:25:35</div></td></tr></tbody>
                                 </table>
                             </div>
                         </div>
